@@ -1,0 +1,41 @@
+Agusti Moll Guerrero / Activitat Github
+
+Completa els següents apartats fent ús del terminal i anota totes les comandes que executeis.
+1. Clona el repositori en local.
+Anam a la nostre conte de Github y cream un nou repositori
+
+Clonam el repositori a la carpeta que volguem
+git clone https://github.com/aginard/DebuggerGit.git
+
+Ens creara una carpeta i ens ficam a la carpeta del projecte
+cd DebuggerGit
+
+Esteim apuntant al repositori origin i hem de eliminar la conexio:
+git remote rm origin
+
+Establim conexio amb el nostro repositori: 
+git remote add origin https://github.com/AgustiMoll/ExerciciGitHub.git
+
+2. Puja el repositori al teu compte de github.
+
+O pujam al nostre repositori: git push origin main
+
+3. Crea una branca anomenada "hotfix".
+Cream la branca on posteriorment guardarem els canvis: git branch hotfix
+
+4. Utilitza el debugger per trobar els errors.
+Trobam que el metode mitjana notes no pot calcular la mitjana i per tant el metode millor alumne tampoc pot iniciar
+
+5. Corregeix els errors i fer commit.
+Li hem assignat parametres a un almune i hem cambiat el signe del if perque
+el metode funcioni
+Ens moven a la branca hotfix: git checkout hotfix
+Preparam els archius per un commit: git add . (el punt indica tots)
+I feim un: git commit -m “CorreccioCodi”
+
+6. Fes merge dels canvis a la teva branca master en local.
+Per fer el merge ens tornarem a moure a la branca main: git checkout main
+I farem el merge (les fusionarem): git merge hotfix
+
+7. Puja el resultat al teu repositori (inclòs un fitxer txt amb les comandes que has executat).
+Feim un: git push origin main, i ja tendrem els nostres canvis guardats
